@@ -15,7 +15,7 @@
 ////////////////////
 // Controller
 ////////////////////
-
+//定义MPC预测步长，迭代时间以及步态
 ConvexMPCLocomotion::ConvexMPCLocomotion(float _dt, int _iterations_between_mpc, MIT_UserParameters* parameters) :
   iterationsBetweenMPC(_iterations_between_mpc),
   horizonLength(10),
