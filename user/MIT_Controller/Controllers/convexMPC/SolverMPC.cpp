@@ -382,7 +382,7 @@ void solve_mpc(update_data_t* update, problem_setup* setup)
 
 
 
-
+//重新定义优化问题，对应论文中公式(31),(32)
   qH = 2*(B_qp.transpose()*S*B_qp + update->alpha*eye_12h);
   qg = 2*B_qp.transpose()*S*(A_qp*x_0 - X_d);
 
